@@ -3,7 +3,7 @@ const token = '84403e80a5a3640e128bd9bf96d96d7470c36088';
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return '';
+  return '84403e80a5a3640e128bd9bf96d96d7470c36088';
 }
 
 function forkRepo() {
