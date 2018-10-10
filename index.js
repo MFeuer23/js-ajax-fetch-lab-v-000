@@ -12,7 +12,7 @@ function forkRepo() {
  
   fetch('https://api.github.com/repos/:owner/:repo/forks', {
     headers: {
-    Authorization: `84403e80a5a3640e128bd9bf96d96d7470c36088`
+    Authorization: `token 84403e80a5a3640e128bd9bf96d96d7470c36088`
     }
   })
   .then(res => res.json())
