@@ -30,8 +30,9 @@ function createIssue() {
   const title = document.getElementById('title').value
   const body = document.getElementById('body').value
   
-  fetch(`https://api.github.com/repos/${repo}/forks`, {
+  fetch(`https://api.github.com/repos/:owner/:repo/issues`, {
     method: 'POST',
+    title: `${title}`
     body: JSON.stringify('postData'),
     headers: {
     Authorization: `token ${getToken()}`
