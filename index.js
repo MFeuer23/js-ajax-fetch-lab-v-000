@@ -30,7 +30,7 @@ function createIssue() {
   const title = document.getElementById('title').value
   const body = document.getElementById('body').value
   
-  fetch(`https://api.github.com/repos/:owner/:repo/issues`, {
+  fetch(`/js-ajax-fetch-lab/issues/`, {
     method: 'POST',
     title: JSON.stringify(title),
     body: JSON.stringify(body),
