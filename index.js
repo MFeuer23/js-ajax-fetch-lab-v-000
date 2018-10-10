@@ -29,6 +29,18 @@ function createIssue() {
   //use this function to create an issue based on the values input in index.html
   const title = document.getElementById('title').value
   const body = document.getElementById('body').value
+  
+  fetch(`https://api.github.com/repos/${repo}/forks`, {
+    method: 'POST',
+    body: JSON.stringify('postData'),
+    headers: {
+    Authorization: `token ${getToken()}`
+    }
+  })
+  .then(res => res.json())
+  .then(json => console.log(json));
+}
+
 }
 
 function getIssues() {
