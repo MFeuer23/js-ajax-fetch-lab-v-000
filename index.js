@@ -16,7 +16,7 @@ function forkRepo() {
     }
   })
   .then(res => res.json())
-  .then(json => document.write(json));
+  .then(json => document.write(`${json}`));
 }
 
 function showResults(json) {
