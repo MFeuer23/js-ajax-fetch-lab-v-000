@@ -46,7 +46,7 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-    fetch(`/js-ajax-fetch-lab/issues/`, {
+  fetch(`/js-ajax-fetch-lab/issues/`, {
     headers: {
     Authorization: `token ${getToken()}`
     }
